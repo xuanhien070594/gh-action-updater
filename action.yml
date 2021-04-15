@@ -18,6 +18,9 @@ inputs:
   branch:
     default: ${{ github.event.repository.default_branch }}
     description: Target branch to update.
+  message:
+    default: 'docs: update'
+    description: Commit
 runs:
   using: node12
   main: dist/index.js
