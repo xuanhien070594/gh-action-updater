@@ -11,6 +11,7 @@ interface Inputs {
   max: string
   template: string
   branch: string
+  message: string
   [key: string]: string
 }
 
@@ -32,6 +33,7 @@ Toolkit.run<Inputs>(async tools => {
     ...tools.context.repo,
     token: tools.token,
     section: tools.inputs['readme-section'],
-    branch: tools.inputs.branch || tools.context.payload.repository?.default_branch
+    branch: tools.inputs.branch || tools.context.payload.repository?.default_branch,
+    message: tools.inputs.message
   })
 })
