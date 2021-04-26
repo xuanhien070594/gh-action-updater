@@ -24,9 +24,10 @@ Toolkit.run<Inputs>(async tools => {
   }
 
   // Create our new list
+  const timestamp = new Date().getUTCMilliseconds().toString();
   const newString = feed.items
     .slice(0, parseInt(tools.inputs.max, 10)) 
-    .map(item => mustache.render(tools.inputs.template, item)).join('\n')
+    .map(item => mustache.render(tools.inputs.template, item)).join(`\n<!--${timestamp}-->\n`)
 
   // Update the section of our README
   await ReadmeBox.updateSection(newString, {
