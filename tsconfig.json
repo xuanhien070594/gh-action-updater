@@ -5,9 +5,9 @@
       "es2015",
       "es2017"
     ],
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "es5",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
