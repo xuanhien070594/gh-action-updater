@@ -1,7 +1,7 @@
 {
   "name": "gh-action-updater",
   "private": true,
-  "main": "dist/index.js",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx ncc build ./src/index.ts"
