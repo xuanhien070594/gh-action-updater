@@ -23,7 +23,7 @@ inputs:
     description: Commit
 runs:
   using: node20
-  main: src/index.ts
+  main: src/index.js
 branding:
   icon: activity
   color: red
